@@ -1,0 +1,30 @@
+extends layout
+
+block content
+    .container
+        form(method='POST', action='/users/register')
+            .form-group.alert.alert-success(style='text-align:center; font-weight:bolder;')
+                h1 CREATE USER ACCOUNT
+            .form-group
+                label Name:
+                input.form-control(type='text', name='name' placeholder='Enter Your Name')
+
+            .form-group
+                label Email:
+                input.form-control(type='email', name='email' placeholder='Enter Your Email')
+
+            .form-group
+                label Username:
+                input.form-control(type='text', name='username' placeholder='Enter Your Username')
+
+            .form-group
+                label Password:
+                input.form-control(type='password', name='password' placeholder='Set Your Password')
+
+            .form-group
+                label Confirm Password:
+                input.form-control(type='password', name='password1' placeholder='Confirm Your Password')
+
+            .form-group
+                input.btn.btn-success(type='submit', value='CREATE ACCOUNT') 
+

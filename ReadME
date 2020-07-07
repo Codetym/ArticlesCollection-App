@@ -1,0 +1,4 @@
+username: doe
+password: janedoe
+
+A simple articles collection app that enables one to create a user account then add one's articles with edit and delete permissions resitricted to that particular user only

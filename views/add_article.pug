@@ -1,0 +1,16 @@
+extends layout
+
+block content
+	form(method='POST', action='/articles/add')
+		.form-group.alert.alert-success(style='text-align:center; font-weight:bolder;')
+			h1 #{title}
+		.form-group
+			label Title:
+			input.form-control(name='title', type='text', placeholder='Article Title')
+
+		.form-group
+			label Body:
+			textarea.form-control(name='body' placeholder='Article Body')
+
+		.form-group
+			input.btn.btn-success(type='submit', value='submit')
